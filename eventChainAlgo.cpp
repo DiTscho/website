@@ -1,6 +1,5 @@
-/* no description here, just an implementation of python
-   code by Krauth to go sure that further implementations
-   will be correct */
+/* implementation of the python
+   code by  Werner Krauth: http://www.lps.ens.fr/~krauth/index.php/Bernard_Krauth_Wilson_2009 */
 
 #include <cmath>
 #include <cstdlib>
@@ -31,8 +30,8 @@ std::function<double()> ranReal = std::bind(unif4, std::ref(mersenne));
 using namespace std;
 
 int iterations = 1000000;
-double box = 1.0;
-double d = 0.25;
+double box = 4.0;
+double d = 1.0;
 double zeroDistanceToGo;
 
 vector<double> data;
